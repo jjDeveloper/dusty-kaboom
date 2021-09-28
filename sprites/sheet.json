@@ -1,0 +1,347 @@
+{
+  "vine": {
+    "x": 0,
+    "y": 0,
+    "width": 35,
+    "height": 35
+  },
+  "tree": {
+    "x": 35,
+    "y": 0,
+    "width": 70,
+    "height": 130
+  },
+  "mid-floor-long": {
+    "x": 112,
+    "y": 0,
+    "width": 16,
+    "height": 32
+  },
+  "mid-floor-short-one": {
+    "x": 128,
+    "y": 0,
+    "width": 16,
+    "height": 16
+  },
+  "mid-floor-short-two": {
+    "x": 144,
+    "y": 0,
+    "width": 16,
+    "height": 16
+  },
+  "end-floor-left-short": {
+    "x": 128,
+    "y": 16,
+    "height": 16,
+    "width": 16
+  },
+  "end-floor-right-short": {
+    "x": 144,
+    "y": 16,
+    "height": 16,
+    "width": 16
+  },
+  "end-floor-right-long-ng": {
+    "x": 192,
+    "y": 0,
+    "width": 16,
+    "height": 32
+  },
+  "end-floor-left-long-ng": {
+    "x": 160,
+    "y": 0,
+    "width": 16,
+    "height": 32
+  },
+  "mid-floor-ng": {
+    "x": 176,
+    "y": 0,
+    "width": 16,
+    "height": 32
+  },
+  "blank-wall": {
+    "x": 176,
+    "y": 16,
+    "width": 16,
+    "height": 16
+  },
+  "pillar-floor-long-ng": {
+    "x": 208,
+    "y": 0,
+    "width": 16,
+    "height": 32
+  },
+"mid-floor-long-b": {
+    "x": 112,
+    "y": 32,
+    "width": 16,
+    "height": 32
+  },
+  "mid-floor-short-one-b": {
+    "x": 128,
+    "y": 32,
+    "width": 16,
+    "height": 16
+  },
+  "mid-floor-short-two-b": {
+    "x": 144,
+    "y": 32,
+    "width": 16,
+    "height": 16
+  },
+  "end-floor-left-short-b": {
+    "x": 128,
+    "y": 48,
+    "height": 16,
+    "width": 16
+  },
+  "end-floor-right-short-b": {
+    "x": 144,
+    "y": 48,
+    "height": 16,
+    "width": 16
+  },
+  "end-floor-right-long-ngb": {
+    "x": 192,
+    "y": 32,
+    "width": 16,
+    "height": 32
+  },
+  "end-floor-left-long-ngb": {
+    "x": 160,
+    "y": 32,
+    "width": 16,
+    "height": 32
+  },
+  "mid-floor-ngb": {
+    "x": 176,
+    "y": 32,
+    "width": 16,
+    "height": 16
+  },
+  "pillar-floor-long-ngb": {
+    "x": 208,
+    "y": 32,
+    "width": 16,
+    "height": 32
+  },
+  "shrub": {
+    "x": 176,
+    "y": 48,
+    "width": 16,
+    "height": 16
+  },
+  "sign-one": {
+    "x": 224,
+    "y": 0,
+    "width": 16,
+    "height": 16
+  },
+  "sign-two": {
+    "x": 240,
+    "y": 0,
+    "width": 16,
+    "height": 16
+  },
+  "sign-three": {
+    "x": 256,
+    "y": 0,
+    "width": 16,
+    "height": 16
+  },
+    "sign-four": {
+    "x": 224,
+    "y": 16,
+    "width": 16,
+    "height": 16
+  },
+  "sign-five": {
+    "x": 240,
+    "y": 16,
+    "width": 16,
+    "height": 16
+  },
+  "sign-six": {
+    "x": 256,
+    "y": 16,
+    "width": 16,
+    "height": 16
+  },
+    "fence-left": {
+    "x": 224,
+    "y": 32,
+    "width": 16,
+    "height": 16
+  },
+  "fence-mid": {
+    "x": 240,
+    "y": 32,
+    "width": 16,
+    "height": 16
+  },
+  "fence-right": {
+    "x": 256,
+    "y": 32,
+    "width": 16,
+    "height": 16
+  },
+  "fence-left-b": {
+    "x": 224,
+    "y": 48,
+    "width": 16,
+    "height": 16
+  },
+  "fence-mid-b": {
+    "x": 240,
+    "y": 48,
+    "width": 16,
+    "height": 16
+  },
+  "fence-right-b": {
+    "x": 256,
+    "y": 48,
+    "width": 16,
+    "height": 16
+  },
+  "chest": {
+    "x": 224,
+    "y": 64,
+    "width": 48,
+    "height": 16,
+    "sliceX": 3,
+    "anims": {
+      "open": {
+        "from": 0,
+        "to": 2,
+        "speed": 20,
+        "loop": false
+      },
+      "close": {
+        "from": 2,
+        "to": 0,
+        "speed": 20,
+        "loop": false
+      }
+    }
+  },
+  "flower-one": {
+    "x": 224,
+    "y": 80,
+    "width": 16,
+    "height": 16
+  },
+  "flower-two": {
+    "x": 240,
+    "y": 80,
+    "width": 16,
+    "height": 16
+  },
+  "rock-one": {
+    "x": 256,
+    "y": 80,
+    "width": 16,
+    "height": 16
+  },
+  "flower-one-b": {
+    "x": 224,
+    "y": 96,
+    "width": 16,
+    "height": 16
+  },
+  "flower-two-b": {
+    "x": 240,
+    "y": 96,
+    "width": 16,
+    "height": 16
+  },
+  "rock-one-b": {
+    "x": 256,
+    "y": 96,
+    "width": 16,
+    "height": 16
+  },
+  "ladder": {
+    "x": 112,
+    "y": 64,
+    "width": 16,
+    "height": 48
+  },
+  "box": {
+    "x": 130,
+    "y": 66,
+    "width": 14,
+    "height": 14
+  },
+    "water": {
+    "x": 128,
+    "y": 80,
+    "width": 16,
+    "height": 32
+  },
+  "blank-full-one": {
+    "x": 160,
+    "y": 64,
+    "width": 16,
+    "height": 48
+  },
+  "blank-full-two": {
+    "x":144,
+    "y": 64,
+    "width": 16,
+    "height": 48
+  },
+  "mound-tl": {
+    "x":176,
+    "y": 64,
+    "width": 16,
+    "height": 16
+  },
+  "mound-l": {
+    "x":176,
+    "y": 80,
+    "width": 16,
+    "height": 16
+  },
+  "mound-bl": {
+    "x":176,
+    "y": 96,
+    "width": 16,
+    "height": 16
+  },
+  "mound-t": {
+    "x":192,
+    "y": 64,
+    "width": 16,
+    "height": 16
+  },
+  "mound-m": {
+    "x":192,
+    "y": 80,
+    "width": 16,
+    "height": 16
+  },
+  "mound-b": {
+    "x":192,
+    "y": 96,
+    "width": 16,
+    "height": 16
+  },
+  "mound-tr": {
+    "x":208,
+    "y": 64,
+    "width": 16,
+    "height": 16
+  },
+  "mound-r": {
+    "x":208,
+    "y": 80,
+    "width": 16,
+    "height": 16
+  },
+  "mound-br": {
+    "x":208,
+    "y": 96,
+    "width": 16,
+    "height": 16
+  }                   
+}

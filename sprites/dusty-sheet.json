@@ -1,0 +1,16 @@
+{
+  "dusty": {
+    "x": 0,
+    "y": 0,
+    "height": 228,
+    "width": 182,
+    "sliceX": 2,
+    "anims": {
+      "run": {
+        "from": 0,
+        "to": 1,
+        "speed": 20
+      } 
+    }
+  }
+}
