@@ -3,6 +3,7 @@ import {levelOne} from "./level";
 const FLOOR_HEIGHT = 48;
 const JUMP_FORCE = 800;
 const SPEED = 480; 
+const OVER_TEXT = "twitch.tv/dustyonanime";
 
 export const titleScene =  () => {
   levelOne();
@@ -39,6 +40,20 @@ export const gameScene = () => {
         camPos(player.pos.x + 52, 200);
       }
 
+}); player.collides("chest", (c) => {
+  if(!c.opened) {
+    c.opened = !c.opened;
+    c.play("open");
+    shake();
+    setTimeout(() => {
+      add([
+        text(OVER_TEXT),
+        pos(player.pos.x - 100, 200),
+        scale(0.2),
+        origin("center"),
+      ]);
+    }, 400)
+  }
 });
     player.collides("danger", () => {
         // go to "lose" scene and pass the score

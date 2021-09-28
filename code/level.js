@@ -84,13 +84,19 @@ addLevel([
     "                                          [",
     "                                          [",
     "                []                        [",
-    " !          []     *       !              [",
+    " !          []     *       !        $     [",
     "===========~  ~~##======~~================[",
 ], {
     // define the size of each block
     width: 16,
     height: 16,
     // define what each symbol means, by a function returning a comp list (what you'll pass to add())
+    "$": () => [
+      sprite("chest"),
+      {opened: false},
+      area(),
+      "chest"
+    ],
     "*": () => [
       sprite("box"),
       pos(0, 5),
@@ -125,16 +131,6 @@ addLevel([
         sprite("mid-floor-short-one"),
         area(),
         solid(),
-    ],
-    "$": () => [
-        sprite("bean"),
-        area(),
-        pos(0, -9),
-    ],
-    "^": () => [
-        sprite("bean"),
-        area(),
-        "danger",
-    ],
+    ]
 });
 }

@@ -2471,11 +2471,17 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       "                                          [",
       "                                          [",
       "                []                        [",
-      " !          []     *       !              [",
+      " !          []     *       !        $     [",
       "===========~  ~~##======~~================["
     ], {
       width: 16,
       height: 16,
+      "$": () => [
+        sprite("chest"),
+        { opened: false },
+        area(),
+        "chest"
+      ],
       "*": () => [
         sprite("box"),
         pos(0, 5),
@@ -2510,21 +2516,12 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
         sprite("mid-floor-short-one"),
         area(),
         solid()
-      ],
-      "$": () => [
-        sprite("bean"),
-        area(),
-        pos(0, -9)
-      ],
-      "^": () => [
-        sprite("bean"),
-        area(),
-        "danger"
       ]
     });
   }, "levelOne");
 
   // code/scenes.js
+  var OVER_TEXT = "twitch.tv/dustyonanime";
   var titleScene = /* @__PURE__ */ __name(() => {
     levelOne();
     camPos(150, 200);
@@ -2555,6 +2552,21 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
     player.action(() => {
       if (player.pos.x >= 96 && player.pos.x < 450) {
         camPos(player.pos.x + 52, 200);
+      }
+    });
+    player.collides("chest", (c) => {
+      if (!c.opened) {
+        c.opened = !c.opened;
+        c.play("open");
+        shake();
+        setTimeout(() => {
+          add([
+            text(OVER_TEXT),
+            pos(player.pos.x - 100, 200),
+            scale(0.2),
+            origin("center")
+          ]);
+        }, 400);
       }
     });
     player.collides("danger", () => {
